@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, #1e3a8a, #0f172a);
+  color: #f9fafb;
+}
+
+.mainContainer {
+  width: 28rem;
+  border-radius: 1rem;
+  background: #1e293b;
+  padding: 1.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.mainContainer:hover {
+  transform: scale(1.03);
+}
+
+.searchInput {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.searchInput input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 25px;
+  background: #334155;
+  color: #f1f5f9;
+  font-size: 1rem;
+  outline: none;
+  transition: background 0.3s;
+}
+
+.searchInput input:focus {
+  background: #475569;
+}
+
+.searchInput button {
+  margin-left: 0.8rem;
+  padding: 0.8rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: #2563eb;
+  color: #f1f5f9;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.searchInput button:hover {
+  background: #3b82f6;
+  transform: scale(1.1);
+}
+
+.weatherIcon {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.weatherIcon img {
+  width: 6rem;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.weatherDetails {
+  text-align: center;
+}
+
+.weatherDetails .temp {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.cityDetails {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.cityDetails .cityName {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #60a5fa;
+}
+
+.cityDetails .date {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #94a3b8;
+}
+
+.windDetails {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.windDetails .infoBox {
+  text-align: center;
+  font-size: 1rem;
+  color: #e2e8f0;
+}
+
+.windDetails .infoBox img {
+  width: 2.5rem;
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+}
+
+.windDetails .infoBox .value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #60a5fa;
+}
+
+.image-logo {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.5));
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
